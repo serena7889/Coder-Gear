@@ -20,25 +20,25 @@ class DataService {
     ]
     
     private let shirts: [Product] = [
-        Product(name: "Devslopes Logo Graphic T-Shirt", price: "$25", imageName: "shirt01"),
-        Product(name: "Devslopes Logo Graphic T-Shirt", price: "$25", imageName: "shirt02"),
-        Product(name: "Devslopes Logo Graphic T-Shirt", price: "$25", imageName: "shirt03"),
-        Product(name: "Devslopes Logo Graphic T-Shirt", price: "$25", imageName: "shirt04"),
-        Product(name: "Devslopes Logo Graphic T-Shirt", price: "$25", imageName: "shirt05")
+        Product(name: "Devslopes Black Logo T-Shirt", price: "$25", imageName: "shirt01"),
+        Product(name: "Devslopes Grey T-Shirt", price: "$25", imageName: "shirt02"),
+        Product(name: "Devslopes Red Logo T-Shirt", price: "$25", imageName: "shirt03"),
+        Product(name: "Devslopes Hustle Grey T-Shirt", price: "$25", imageName: "shirt04"),
+        Product(name: "Devslopes Kickflip T-Shirt", price: "$25", imageName: "shirt05")
     ]
     
     private let hoodies: [Product] = [
-        Product(name: "Devslopes Logo Graphic Hoodie", price: "$35", imageName: "hoodie01"),
-        Product(name: "Devslopes Logo Graphic Hoodie", price: "$35", imageName: "hoodie02"),
-        Product(name: "Devslopes Logo Graphic Hoodie", price: "$35", imageName: "hoodie03"),
-        Product(name: "Devslopes Logo Graphic Hoodie", price: "$35", imageName: "hoodie04")
+        Product(name: "Devslopes Black Hoodie", price: "$35", imageName: "hoodie01"),
+        Product(name: "Devslopes Red Hoodie", price: "$35", imageName: "hoodie02"),
+        Product(name: "Devslopes Logo Grey Hoodie", price: "$35", imageName: "hoodie03"),
+        Product(name: "Devslopes Logo Black Hoodie", price: "$35", imageName: "hoodie04")
     ]
     
     private let hats: [Product] = [
-        Product(name: "Devslopes Logo Beanie", price: "$12", imageName: "hat01"),
-        Product(name: "Devslopes Logo Beanie", price: "$12", imageName: "hat02"),
-        Product(name: "Devslopes Logo Beanie", price: "$12", imageName: "hat03"),
-        Product(name: "Devslopes Logo Beanie", price: "$12", imageName: "hat04")
+        Product(name: "Devslopes Black Beanie", price: "$12", imageName: "hat01"),
+        Product(name: "Devslopes White Baseball Cap", price: "$12", imageName: "hat02"),
+        Product(name: "Devslopes Black Baseball Cap", price: "$12", imageName: "hat03"),
+        Product(name: "Devslopes Black Snapback", price: "$12", imageName: "hat04")
     ]
     
     private let digital = [Product]()

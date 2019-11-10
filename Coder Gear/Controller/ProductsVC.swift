@@ -8,29 +8,30 @@
 
 import UIKit
 
-class ProductsVC: UIViewController {
+class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var category: Category!
+    private var products: [Product]!
     
     @IBOutlet weak var collectionView: UICollectionView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
     }
-
-}
-
-extension ProductsVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func initProducts(category: Category) {
+        products = DataService.instance.getProducts(forCategory: category.title)
+        navigationItem.title = category.title
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return category.products.count
+        return products.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCell {
-            cell.updateCell(product: category.products[indexPath.row])
+            cell.updateCell(product: products[indexPath.row])
             return cell
         } else {
             return ProductCell()

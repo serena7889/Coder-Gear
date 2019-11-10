@@ -8,12 +8,10 @@
 
 import UIKit
 
-class CategoriesVC: UIViewController {
+class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var categoryTable: UITableView!
     
-    var category: Int?
-
     override func viewDidLoad() {
         super.viewDidLoad()
         categoryTable.delegate = self
@@ -22,15 +20,10 @@ class CategoriesVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let productVC = segue.destination as? ProductsVC {
-            let categoryIndex = category ?? 0
-            productVC.category = DataService.instance.getCategories()[categoryIndex]
+            productVC.initProducts(category: sender as! Category)
         }
     }
-
-
-}
-
-extension CategoriesVC: UITableViewDelegate, UITableViewDataSource {
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataService.instance.getCategories().count
@@ -47,10 +40,9 @@ extension CategoriesVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        category = indexPath.row
-        performSegue(withIdentifier: "toProductVCSegue", sender: self)
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "toProductVCSegue", sender: category)
     }
-    
-    
-}
 
+
+}
