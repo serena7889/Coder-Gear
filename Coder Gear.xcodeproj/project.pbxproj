@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		437B67C023785841005ACB54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67BF23785841005ACB54 /* AppDelegate.swift */; };
 		437B67C223785841005ACB54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67C123785841005ACB54 /* SceneDelegate.swift */; };
-		437B67C423785841005ACB54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67C323785841005ACB54 /* ViewController.swift */; };
+		437B67C423785841005ACB54 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67C323785841005ACB54 /* CategoriesVC.swift */; };
 		437B67C723785841005ACB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437B67C523785841005ACB54 /* Main.storyboard */; };
 		437B67C923785844005ACB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437B67C823785844005ACB54 /* Assets.xcassets */; };
 		437B67CC23785844005ACB54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437B67CA23785844005ACB54 /* LaunchScreen.storyboard */; };
 		437B67D723785844005ACB54 /* Coder_GearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67D623785844005ACB54 /* Coder_GearTests.swift */; };
+		437B67E523786321005ACB54 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67E423786321005ACB54 /* CategoryCell.swift */; };
+		437B67E7237864CA005ACB54 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67E6237864C9005ACB54 /* Category.swift */; };
+		437B67EA237865DE005ACB54 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67E9237865DE005ACB54 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +33,7 @@
 		437B67BC23785841005ACB54 /* Coder Gear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coder Gear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		437B67BF23785841005ACB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		437B67C123785841005ACB54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		437B67C323785841005ACB54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		437B67C323785841005ACB54 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		437B67C623785841005ACB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		437B67C823785844005ACB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		437B67CB23785844005ACB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		437B67D223785844005ACB54 /* Coder GearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coder GearTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		437B67D623785844005ACB54 /* Coder_GearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coder_GearTests.swift; sourceTree = "<group>"; };
 		437B67D823785844005ACB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437B67E423786321005ACB54 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		437B67E6237864C9005ACB54 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		437B67E9237865DE005ACB54 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +85,12 @@
 		437B67BE23785841005ACB54 /* Coder Gear */ = {
 			isa = PBXGroup;
 			children = (
+				437B67E8237865CC005ACB54 /* Services */,
+				437B67E3237862D1005ACB54 /* Model */,
+				437B67E2237862CB005ACB54 /* View */,
+				437B67E1237862BB005ACB54 /* Controller */,
 				437B67BF23785841005ACB54 /* AppDelegate.swift */,
 				437B67C123785841005ACB54 /* SceneDelegate.swift */,
-				437B67C323785841005ACB54 /* ViewController.swift */,
 				437B67C523785841005ACB54 /* Main.storyboard */,
 				437B67C823785844005ACB54 /* Assets.xcassets */,
 				437B67CA23785844005ACB54 /* LaunchScreen.storyboard */,
@@ -97,6 +106,38 @@
 				437B67D823785844005ACB54 /* Info.plist */,
 			);
 			path = "Coder GearTests";
+			sourceTree = "<group>";
+		};
+		437B67E1237862BB005ACB54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				437B67C323785841005ACB54 /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		437B67E2237862CB005ACB54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				437B67E423786321005ACB54 /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		437B67E3237862D1005ACB54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				437B67E6237864C9005ACB54 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		437B67E8237865CC005ACB54 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				437B67E9237865DE005ACB54 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				437B67C423785841005ACB54 /* ViewController.swift in Sources */,
+				437B67C423785841005ACB54 /* CategoriesVC.swift in Sources */,
+				437B67E7237864CA005ACB54 /* Category.swift in Sources */,
 				437B67C023785841005ACB54 /* AppDelegate.swift in Sources */,
+				437B67EA237865DE005ACB54 /* DataService.swift in Sources */,
 				437B67C223785841005ACB54 /* SceneDelegate.swift in Sources */,
+				437B67E523786321005ACB54 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
