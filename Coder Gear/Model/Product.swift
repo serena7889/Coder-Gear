@@ -1,5 +1,5 @@
 //
-//  Category.swift
+//  Product.swift
 //  Coder Gear
 //
 //  Created by Serena Lambert on 10/11/2019.
@@ -8,13 +8,15 @@
 
 import Foundation
 
-class Category {
+class Product {
     
-    let title: String
+    let name: String
+    let price: String
     let imageName: String
     
-    init(title: String, imageName: String) {
-        self.title = title
+    init(name: String, price: String, imageName: String) {
+        self.name = name
+        self.price = price
         self.imageName = imageName
     }
     

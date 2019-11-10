@@ -11,11 +11,20 @@ import UIKit
 class CategoriesVC: UIViewController {
     
     @IBOutlet weak var categoryTable: UITableView!
+    
+    var category: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         categoryTable.delegate = self
         categoryTable.dataSource = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productVC = segue.destination as? ProductsVC {
+            let categoryIndex = category ?? 0
+            productVC.category = DataService.instance.getCategories()[categoryIndex]
+        }
     }
 
 
@@ -35,6 +44,11 @@ extension CategoriesVC: UITableViewDelegate, UITableViewDataSource {
         } else {
             return CategoryCell()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        category = indexPath.row
+        performSegue(withIdentifier: "toProductVCSegue", sender: self)
     }
     
     

@@ -17,6 +17,9 @@
 		437B67E523786321005ACB54 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67E423786321005ACB54 /* CategoryCell.swift */; };
 		437B67E7237864CA005ACB54 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67E6237864C9005ACB54 /* Category.swift */; };
 		437B67EA237865DE005ACB54 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67E9237865DE005ACB54 /* DataService.swift */; };
+		437B67EC23786F94005ACB54 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67EB23786F94005ACB54 /* ProductCell.swift */; };
+		437B67EE23787021005ACB54 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67ED23787021005ACB54 /* Product.swift */; };
+		437B67F0237874E5005ACB54 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B67EF237874E5005ACB54 /* ProductsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		437B67E423786321005ACB54 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		437B67E6237864C9005ACB54 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		437B67E9237865DE005ACB54 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		437B67EB23786F94005ACB54 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		437B67ED23787021005ACB54 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		437B67EF237874E5005ACB54 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				437B67C323785841005ACB54 /* CategoriesVC.swift */,
+				437B67EF237874E5005ACB54 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				437B67E423786321005ACB54 /* CategoryCell.swift */,
+				437B67EB23786F94005ACB54 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				437B67E6237864C9005ACB54 /* Category.swift */,
+				437B67ED23787021005ACB54 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,11 +251,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				437B67C423785841005ACB54 /* CategoriesVC.swift in Sources */,
+				437B67EE23787021005ACB54 /* Product.swift in Sources */,
 				437B67E7237864CA005ACB54 /* Category.swift in Sources */,
 				437B67C023785841005ACB54 /* AppDelegate.swift in Sources */,
 				437B67EA237865DE005ACB54 /* DataService.swift in Sources */,
 				437B67C223785841005ACB54 /* SceneDelegate.swift in Sources */,
 				437B67E523786321005ACB54 /* CategoryCell.swift in Sources */,
+				437B67EC23786F94005ACB54 /* ProductCell.swift in Sources */,
+				437B67F0237874E5005ACB54 /* ProductsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
