@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Coder Gear.xcodeproj">
+      location = "self:/Users/serenalambert/development/swift5_course/Coder Gear/CoderGear.xcodeproj">
    </FileRef>
 </Workspace>

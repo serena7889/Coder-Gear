@@ -33,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		437B67BC23785841005ACB54 /* Coder Gear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coder Gear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		437B67BC23785841005ACB54 /* CoderGear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderGear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		437B67BF23785841005ACB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		437B67C123785841005ACB54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		437B67C323785841005ACB54 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		437B67C823785844005ACB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		437B67CB23785844005ACB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		437B67CD23785844005ACB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		437B67D223785844005ACB54 /* Coder GearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coder GearTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		437B67D223785844005ACB54 /* CoderGearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoderGearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		437B67D623785844005ACB54 /* Coder_GearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coder_GearTests.swift; sourceTree = "<group>"; };
 		437B67D823785844005ACB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		437B67E423786321005ACB54 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
@@ -73,8 +73,8 @@
 		437B67B323785841005ACB54 = {
 			isa = PBXGroup;
 			children = (
-				437B67BE23785841005ACB54 /* Coder Gear */,
-				437B67D523785844005ACB54 /* Coder GearTests */,
+				437B67BE23785841005ACB54 /* CoderGear */,
+				437B67D523785844005ACB54 /* CoderGearTests */,
 				437B67BD23785841005ACB54 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,13 +82,13 @@
 		437B67BD23785841005ACB54 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				437B67BC23785841005ACB54 /* Coder Gear.app */,
-				437B67D223785844005ACB54 /* Coder GearTests.xctest */,
+				437B67BC23785841005ACB54 /* CoderGear.app */,
+				437B67D223785844005ACB54 /* CoderGearTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		437B67BE23785841005ACB54 /* Coder Gear */ = {
+		437B67BE23785841005ACB54 /* CoderGear */ = {
 			isa = PBXGroup;
 			children = (
 				437B67E8237865CC005ACB54 /* Services */,
@@ -102,16 +102,16 @@
 				437B67CA23785844005ACB54 /* LaunchScreen.storyboard */,
 				437B67CD23785844005ACB54 /* Info.plist */,
 			);
-			path = "Coder Gear";
+			path = CoderGear;
 			sourceTree = "<group>";
 		};
-		437B67D523785844005ACB54 /* Coder GearTests */ = {
+		437B67D523785844005ACB54 /* CoderGearTests */ = {
 			isa = PBXGroup;
 			children = (
 				437B67D623785844005ACB54 /* Coder_GearTests.swift */,
 				437B67D823785844005ACB54 /* Info.plist */,
 			);
-			path = "Coder GearTests";
+			path = CoderGearTests;
 			sourceTree = "<group>";
 		};
 		437B67E1237862BB005ACB54 /* Controller */ = {
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		437B67BB23785841005ACB54 /* Coder Gear */ = {
+		437B67BB23785841005ACB54 /* CoderGear */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 437B67DB23785844005ACB54 /* Build configuration list for PBXNativeTarget "Coder Gear" */;
+			buildConfigurationList = 437B67DB23785844005ACB54 /* Build configuration list for PBXNativeTarget "CoderGear" */;
 			buildPhases = (
 				437B67B823785841005ACB54 /* Sources */,
 				437B67B923785841005ACB54 /* Frameworks */,
@@ -164,14 +164,14 @@
 			);
 			dependencies = (
 			);
-			name = "Coder Gear";
+			name = CoderGear;
 			productName = "Coder Gear";
-			productReference = 437B67BC23785841005ACB54 /* Coder Gear.app */;
+			productReference = 437B67BC23785841005ACB54 /* CoderGear.app */;
 			productType = "com.apple.product-type.application";
 		};
-		437B67D123785844005ACB54 /* Coder GearTests */ = {
+		437B67D123785844005ACB54 /* CoderGearTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 437B67DE23785844005ACB54 /* Build configuration list for PBXNativeTarget "Coder GearTests" */;
+			buildConfigurationList = 437B67DE23785844005ACB54 /* Build configuration list for PBXNativeTarget "CoderGearTests" */;
 			buildPhases = (
 				437B67CE23785844005ACB54 /* Sources */,
 				437B67CF23785844005ACB54 /* Frameworks */,
@@ -182,9 +182,9 @@
 			dependencies = (
 				437B67D423785844005ACB54 /* PBXTargetDependency */,
 			);
-			name = "Coder GearTests";
+			name = CoderGearTests;
 			productName = "Coder GearTests";
-			productReference = 437B67D223785844005ACB54 /* Coder GearTests.xctest */;
+			productReference = 437B67D223785844005ACB54 /* CoderGearTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 437B67B723785841005ACB54 /* Build configuration list for PBXProject "Coder Gear" */;
+			buildConfigurationList = 437B67B723785841005ACB54 /* Build configuration list for PBXProject "CoderGear" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,8 +219,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				437B67BB23785841005ACB54 /* Coder Gear */,
-				437B67D123785844005ACB54 /* Coder GearTests */,
+				437B67BB23785841005ACB54 /* CoderGear */,
+				437B67D123785844005ACB54 /* CoderGearTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,7 +275,7 @@
 /* Begin PBXTargetDependency section */
 		437B67D423785844005ACB54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 437B67BB23785841005ACB54 /* Coder Gear */;
+			target = 437B67BB23785841005ACB54 /* CoderGear */;
 			targetProxy = 437B67D323785844005ACB54 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -420,12 +420,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65Y5T9V9HQ;
-				INFOPLIST_FILE = "Coder Gear/Info.plist";
+				INFOPLIST_FILE = CoderGear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.serenaLambert.Coder-Gear";
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenaLambert.CoderGear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,12 +438,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65Y5T9V9HQ;
-				INFOPLIST_FILE = "Coder Gear/Info.plist";
+				INFOPLIST_FILE = CoderGear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.serenaLambert.Coder-Gear";
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenaLambert.CoderGear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +457,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65Y5T9V9HQ;
-				INFOPLIST_FILE = "Coder GearTests/Info.plist";
+				INFOPLIST_FILE = CoderGearTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,7 +468,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coder Gear.app/Coder Gear";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoderGear.app/CoderGear";
 			};
 			name = Debug;
 		};
@@ -479,7 +479,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65Y5T9V9HQ;
-				INFOPLIST_FILE = "Coder GearTests/Info.plist";
+				INFOPLIST_FILE = CoderGearTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -490,14 +490,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coder Gear.app/Coder Gear";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoderGear.app/CoderGear";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		437B67B723785841005ACB54 /* Build configuration list for PBXProject "Coder Gear" */ = {
+		437B67B723785841005ACB54 /* Build configuration list for PBXProject "CoderGear" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				437B67D923785844005ACB54 /* Debug */,
@@ -506,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		437B67DB23785844005ACB54 /* Build configuration list for PBXNativeTarget "Coder Gear" */ = {
+		437B67DB23785844005ACB54 /* Build configuration list for PBXNativeTarget "CoderGear" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				437B67DC23785844005ACB54 /* Debug */,
@@ -515,7 +515,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		437B67DE23785844005ACB54 /* Build configuration list for PBXNativeTarget "Coder GearTests" */ = {
+		437B67DE23785844005ACB54 /* Build configuration list for PBXNativeTarget "CoderGearTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				437B67DF23785844005ACB54 /* Debug */,
